@@ -1,0 +1,29 @@
+[
+  {
+    "id": "0",
+    "name": "Estranged",
+    "album": "Use Your Illusion II",
+    "artist": "Guns N' Roses",
+    "duration": "9:23",
+    "album_cover": "images/tracks/estranged",
+    "audioSrc": "music/estranged"
+  },
+  {
+    "id": "1",
+    "name": "Paradise City",
+    "album": "Appetite for Destruction",
+    "artist": "Guns N' Roses",
+    "duration": "6:46",
+    "album_cover": "images/tracks/paradise-city",
+    "audioSrc": "music/paradise-city"
+  },
+  {
+    "id": "2",
+    "name": "Patience",
+    "album": "G N' R Lies",
+    "artist": "Guns N' Roses",
+    "duration": "5:54",
+    "album_cover": "images/tracks/patience",
+    "audioSrc": "music/patience"
+  }
+]

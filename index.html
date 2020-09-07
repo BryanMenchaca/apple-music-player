@@ -2,37 +2,39 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Music Player</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <div class="screen">
       <div class="cover-song">
-        <img src="./images/estranged.jpg" class="track-img" alt="track-img" />
+        <img src="" class="track-img" alt="" id="music-cover" />
         <div class="shadow">
-          <img src="./images/estranged.jpg" alt="" />
+          <img src="" alt="" id="music-shadow-cover" />
         </div>
       </div>
-      <div class="progress-bar">
-        <div class="progress-range"></div>
+      <div id="progress-bar">
+        <div id="progress-range"></div>
       </div>
       <div class="duration">
-        <span>3:50</span>
-        <span>-5:32</span>
+        <span id="current-time">0:00</span>
+        <span id="total-duration">0:00</span>
       </div>
+      <audio src="./music/estranged.mp3" id="audio"></audio>
       <div class="info-song">
-        <span class="name-song">Estranged</span>
-        <span class="album-song"> Guns N' Roses - Use Your Illusion II </span>
+        <span id="name-song"></span>
+        <span id="album-song"></span>
       </div>
       <div class="controls">
-        <i class="fas fa-backward"></i>
-        <i class="fas fa-pause"></i>
-        <i class="fas fa-forward"></i>
+        <i class="fas fa-backward" id="btn-prev"></i>
+        <i class="fas fa-play" id="btn-play"></i>
+        <i class="fas fa-forward" id="btn-next"></i>
       </div>
       <div class="volume">
         <i class="fas fa-volume-off"></i>
-        <input type="range" id="volume" />
+        <input type="range" id="volume" min="1" max="100" value="50" />
         <i class="fas fa-volume-up"></i>
       </div>
       <div class="other-options">
@@ -46,5 +48,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="./js/index.js"></script>
+    <script src="./js/player.js"></script>
   </body>
 </html>

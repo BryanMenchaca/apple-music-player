@@ -24,14 +24,14 @@ body {
 
 .cover-song {
   width: 100%;
-  margin-top: 10px;
   display: flex;
-  background-color: #ee2244;
 }
 
 .cover-song .track-img {
   width: 250px;
   border-radius: 5px;
+  transition: all 300ms;
+  transform: scale(0.9);
 }
 
 .cover-song .shadow {
@@ -41,11 +41,13 @@ body {
 }
 
 .shadow img {
+  display: none;
   width: 250px;
   object-fit: cover;
+  transform: scale(0.96);
 }
 
-.progress-bar {
+#progress-bar {
   margin-top: 25px;
   width: 100%;
   height: 3px;
@@ -53,8 +55,8 @@ body {
   border-radius: 3px;
 }
 
-.progress-bar .progress-range {
-  width: 43%;
+#progress-bar #progress-range {
+  width: 0%;
   height: 3px;
   background: #969696;
 }
@@ -78,13 +80,13 @@ body {
   flex-direction: column;
 }
 
-.info-song .name-song {
+.info-song #name-song {
   font-size: 17px;
   font-weight: 600;
   text-align: center;
 }
 
-.info-song .album-song {
+.info-song #album-song {
   margin-top: 5px;
   font-size: 15px;
   text-align: center;
@@ -92,7 +94,7 @@ body {
 }
 
 .controls {
-  margin-top: 30px;
+  margin-top: 25px;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -102,10 +104,16 @@ body {
   font-size: 35px;
   color: #0a0a0a;
   justify-content: space-evenly;
+  cursor: pointer;
 }
 
 .controls .fa-pause {
   transform: scale(1.1, 1.4);
+}
+
+.fa-pause,
+.fa-play {
+  transition: all 100ms;
 }
 
 .volume {
